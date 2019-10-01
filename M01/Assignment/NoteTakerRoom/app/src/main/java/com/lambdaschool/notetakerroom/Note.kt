@@ -40,13 +40,14 @@ class Note : Serializable {
         this.timestamp = System.currentTimeMillis()
     }
 
-    /*public Note(String csvString) {
-        String[] values = csvString.split(",");
-        this.title = values[0];
-        this.content = values[1];
-        this.id = values[2];
 
-        toCsvString();
+
+    /*constructor(csvString: String) {
+        val values = csvString.split(",")
+        this.title = values[0]
+        this.content = values[1]
+        this.id = values[2].toLong()
+        toCsvString()
     }*/
 
     constructor(id: String) {
