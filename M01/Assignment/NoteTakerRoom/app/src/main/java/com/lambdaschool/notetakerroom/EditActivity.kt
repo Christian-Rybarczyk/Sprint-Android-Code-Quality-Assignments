@@ -42,6 +42,7 @@ class EditActivity : AppCompatActivity() {
         val resultIntent = Intent()
         resultIntent.putExtra(EDIT_NOTE_KEY, note)
         setResult(Activity.RESULT_OK, resultIntent)
+        finish()
     }
 
     companion object {
